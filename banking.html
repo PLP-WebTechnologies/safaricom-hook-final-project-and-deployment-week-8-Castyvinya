@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="banking.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="main-title">MY BANKING SYSTEM</h1>
+        <div class="grid-container">
+            <div class="balance-box">
+                <h2>Balance</h2>
+                <p><span id="balance">1000</span> KES</p>
+            </div>
+            
+            <div class="transaction-section">
+                <h2>Transactions</h2>
+                <form id="transaction-form">
+                    <input type="number" id="amount" placeholder="Enter amount" required>
+                    <button type="button" onclick="deposit()">Deposit</button>
+                    <button type="button" onclick="withdraw()">Withdraw</button>
+                </form>
+            </div>
+            
+            <div class="history-section">
+                <h2>Transaction History</h2>
+                <ul id="history"></ul>
+            </div>
+            
+            <div class="account-details">
+                <h2>Account Details</h2>
+                <p><strong>Account Holder:</strong> Casty Wavinya</p>
+                <p><strong>Account Number:</strong> 4365589345</p>
+                <p><strong>Branch:</strong> Nairobi</p>
+            </div>
+            
+            <div class="loan-section">
+                <h2>Loan Information</h2>
+                <p><strong>Loan Amount:</strong> 50000 KES</p>
+                <p><strong>Loan Status:</strong> Active</p>
+                <p><strong>Repayment Date:</strong> 15th March 2025</p>
+            </div>
+            
+            <div class="congrats-animation">
+                <h2>Congratulations!</h2>
+                <p>Great job on saving! Keep going!</p>
+                <div class="emoji-box" id="emoji-box"></div>
+            </div>
+            
+            <div class="additional-info">
+                <h2>Financial Tips</h2>
+                <p>Always set aside at least 10% of your income for savings.</p>
+                <p>Invest wisely to grow your wealth over time.</p>
+                <p>Avoid unnecessary debt and live within your means.</p>
+            </div>
+            
+            <div class="customer-support">
+                <h2>Customer Support</h2>
+                <p>Need help? Contact our 24/7 support team.</p>
+                <p>Email: castyonlinesupport@gmail.com</p>
+                <p>Phone: +254 700 123 456</p>
+            </div>
+            
+            <div class="investment-opportunities">
+                <h2>Investment Opportunities</h2>
+                <p>Explore the best investment plans to grow your wealth.</p>
+                <p>Stocks, bonds, and real estate options available.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Designed by Casty</p>
+            <p>All rights reserved | Casty2025</p>
+        </footer>
+    </div>
+
+    <script src="banking.js"></script>
+</body>
+</html>

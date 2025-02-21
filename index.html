@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="banking.html">Banking System</a></li>
+                <li><a href="additional.html">Additional Page</a></li>
+            </ul>
+            
+            <!-- Authentication Buttons -->
+            <div class="auth-buttons">
+                <button onclick="toggleDropdown('login-menu')">Login</button>
+                <div id="login-menu" class="dropdown-menu">
+                    <h3>Login</h3>
+                    <input type="text" id="login-username" placeholder="Username">
+                    <input type="password" id="login-password" placeholder="Password">
+                    <button onclick="handleLogin()">Submit</button>
+                </div>
+
+                <button onclick="toggleDropdown('signup-menu')">Sign Up</button>
+                <div id="signup-menu" class="dropdown-menu">
+                    <h3>Sign Up</h3>
+                    <input type="text" id="signup-username" placeholder="Username">
+                    <input type="password" id="signup-password" placeholder="Password">
+                    <input type="password" id="signup-confirm-password" placeholder="Confirm Password">
+                    <button onclick="handleSignUp()">Register</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="portfolio">
+            <div class="background-image"></div>
+            <div class="profile">
+                <img src="assets/profile pic.jpg" alt="Profile Picture" class="profile-pic">
+                <h1>My Portfolio</h1>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h2>My Background</h2>
+                    <p>Am Wavinya Casty💅, a tech enthusiast always eager to learn a new skill💻. Am passionate about web development, Graphic Design, and database administration in the near future. Any new skill that comes my way, am ready to learn it. Am smart and nonchalant at the same time.😎😋😎</p>
+                </div>
+                <div class="grid-item">
+                    <h2>Programming Languages</h2>
+                    <p>Am proficient in HTML, CSS, JavaScript, C++, C, and Python🐍 inclusive of the frameworks and libraries.</p>
+                </div>
+                <div class="grid-item">
+                    <h2>Where to Find Me</h2>
+                    <p>Find me at:</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/damaris-mutyandii-65708a2b6/" target="_blank">
+                            <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon"> LinkedIn
+                        </a>
+                        <a href="mailto:damarismutyandii@gmail.com">
+                            <img src="assets/gmail.gif" alt="Gmail" class="social-icon"> Gmail
+                        </a>
+                        <a href="https://github.com/Castyvinya" target="_blank">
+                            <img src="assets/github.png" alt="GitHub" class="social-icon"> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

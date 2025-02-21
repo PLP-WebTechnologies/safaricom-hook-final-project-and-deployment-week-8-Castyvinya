@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        }
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+
+    }nav ul li a:hover {
+    color: #007bff; /* Changes color on hover */
+    }
+
+
+
+
+/* Pushes the auth-buttons to the right */
+.auth-buttons {
+    margin-left: auto;
+    position: relative;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.auth-buttons button:hover {
+    background: #0056b3;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: blue;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    top: 40px; /* Ensures dropdown is below the button */
+}
+
+.dropdown-menu h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.dropdown-menu input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 3px;
+}
+
+.dropdown-menu button {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    background: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+    background: lightgray;
+}
+
+/* Updated Portfolio Background */
+.portfolio {
+    text-align: center;
+    background: url('assets/background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+    color: darkblue;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%; /* Makes the grid span the full width */
+    max-width: 100%; /* Ensures no restriction on width */
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.grid-item {
+    background: orange;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto; /* Keeps height flexible */
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.grid-item:hover {
+    transform: scale(1.1); /* Increases size by 10% on hover */
+}
